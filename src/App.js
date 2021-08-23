@@ -60,6 +60,7 @@ export const App = () => {
           type="file"
           className="form-control"
           required
+          accept="application/pdf"
           onChange={handlePdfFileChange}
         />
         {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
