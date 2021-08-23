@@ -14,11 +14,11 @@ export const App = () => {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   // for onchange event
-  const [pdfFile, setPdfFile] = useState(null);
+  const [pdfFile, setPdfFile] = useState(pdfDefualtFile);
   const [pdfFileError, setPdfFileError] = useState("");
 
   // for submit event
-  const [viewPdf, setViewPdf] = useState(null);
+  const [viewPdf, setViewPdf] = useState(pdfDefualtFile);
 
   // onchange event
   const fileType = ["application/pdf"];
@@ -33,7 +33,7 @@ export const App = () => {
           setPdfFileError("");
         };
       } else {
-        setPdfFile(null);
+        setPdfFile(pdfDefualtFile);
         setPdfFileError("Please select valid pdf file");
       }
     } else {
@@ -65,8 +65,8 @@ export const App = () => {
         />
         {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
         <br></br>
-        <button type="submit" className="btn btn-success btn-lg">
-          UPLOAD
+        <button type="submit" className="btn btn-success btn-sm">
+          Preview
         </button>
       </form>
       <br></br>
