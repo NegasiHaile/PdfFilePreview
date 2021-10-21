@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+# React PDF file preview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+To run this poroject run the folliwing step by step:
 
 ### `npm start`
 
